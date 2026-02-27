@@ -1,0 +1,48 @@
+{
+	"name": "app",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"check:db": "tsx scripts/check-database.ts",
+		"check:migrations": "tsx scripts/verify-migrations.ts"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/adapter-vercel": "^6.3.1",
+		"@sveltejs/kit": "^2.50.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@tailwindcss/forms": "^0.5.11",
+		"@tailwindcss/typography": "^0.5.19",
+		"@tailwindcss/vite": "^4.1.18",
+		"svelte": "^5.49.2",
+		"svelte-check": "^4.3.6",
+		"tailwindcss": "^4.1.18",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@supabase/ssr": "^0.8.0",
+		"@supabase/supabase-js": "^2.95.3",
+		"@tiptap/core": "^3.19.0",
+		"@tiptap/extension-color": "^3.19.0",
+		"@tiptap/extension-highlight": "^3.19.0",
+		"@tiptap/extension-image": "^3.19.0",
+		"@tiptap/extension-link": "^3.19.0",
+		"@tiptap/extension-placeholder": "^3.19.0",
+		"@tiptap/extension-text-align": "^3.19.0",
+		"@tiptap/extension-text-style": "^3.19.0",
+		"@tiptap/extension-underline": "^3.19.0",
+		"@tiptap/starter-kit": "^3.19.0",
+		"browser-image-compression": "^2.0.2",
+		"daisyui": "^5.5.18",
+		"lucide-svelte": "^0.575.0"
+	}
+}
