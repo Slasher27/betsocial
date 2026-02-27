@@ -1,6 +1,7 @@
 # Documentation files (not needed for runtime)
 *.md
 !README.md
+DEVELOPMENT.md
 
 # Development files
 .claude/

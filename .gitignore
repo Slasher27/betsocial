@@ -27,6 +27,7 @@ vite.config.ts.timestamp-*
 /specs
 *.md
 !README.md
+!DEVELOPMENT.md
 
 # Development files
 .claude/
