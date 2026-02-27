@@ -25,3 +25,10 @@ vite.config.ts.timestamp-*
 # Documentation (internal use only)
 /docs
 /specs
+*.md
+!README.md
+
+# Development files
+.claude/
+.vscode/
+/scripts

@@ -1,0 +1,21 @@
+# Documentation files (not needed for runtime)
+*.md
+!README.md
+
+# Development files
+.claude/
+.vscode/
+scripts/
+specs/
+
+# Local environment files
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+
+# Build artifacts already handled by Vercel
+node_modules/
+.svelte-kit/
